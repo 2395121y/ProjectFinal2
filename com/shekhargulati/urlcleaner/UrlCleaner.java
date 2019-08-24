@@ -1,4 +1,4 @@
-package java.com.shekhargulati.urlcleaner;
+package com.shekhargulati.urlcleaner;
 
 import java.io.IOException;
 import java.net.*;

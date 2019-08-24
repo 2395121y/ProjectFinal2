@@ -1,4 +1,4 @@
-package java.com.shekhargulati.urlcleaner;
+package com.shekhargulati.urlcleaner;
 
 /**
  * Original Source Code: https://github.com/shekhargulati/urlcleaner

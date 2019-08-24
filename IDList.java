@@ -1,5 +1,6 @@
 import java.io.BufferedReader;
 import java.io.FileInputStream;
+import java.io.FileReader;
 import java.io.InputStreamReader;
 import java.math.BigInteger;
 import java.util.HashSet;
@@ -63,8 +64,9 @@ public class IDList {
 				for (String file: assessorFiles) {
 					try
 					{
-						/*
+						
 						BufferedReader br= new BufferedReader(new InputStreamReader(new GZIPInputStream(new FileInputStream(file))));
+						/*
 						String line;			
 						String combinedLine = "";					
 
@@ -74,7 +76,8 @@ public class IDList {
 						br.close();
 						*/
 						//JSONObject assessor = (JSONObject) parser.parse(combinedLine);
-						JSONObject assessor = (JSONObject) parser.parse(file);
+						//FileReader reader = new FileReader(file);
+						JSONObject assessor = (JSONObject) parser.parse(br);
 						JSONArray eventArray = (JSONArray) assessor.get("events");
 						Iterator iterator = eventArray.iterator();
 						while (iterator.hasNext())

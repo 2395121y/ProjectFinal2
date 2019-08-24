@@ -1,4 +1,4 @@
-import java.com.shekhargulati.urlcleaner.UrlCleaner;
+import com.shekhargulati.urlcleaner.UrlCleaner;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileInputStream;
